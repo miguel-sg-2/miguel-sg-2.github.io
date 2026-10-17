@@ -53,6 +53,13 @@ a:hover{text-decoration-thickness:2px}
 .side li a{text-decoration:none;color:var(--ink)}
 .side li a:hover{color:var(--accent);text-decoration:underline}
 .side .k{display:inline-block;width:5.2rem;color:var(--muted)}
+.side li a .icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  vertical-align: middle;
+  fill: currentColor;
+  display: inline-block;
+}
 .theme{margin-top:1.2rem;font:inherit;font-size:.85rem;background:none;border:1px solid var(--rule);color:var(--muted);padding:.3rem .7rem;border-radius:999px;cursor:pointer}
 .theme:hover{color:var(--ink);border-color:var(--muted)}
 
@@ -184,8 +191,16 @@ footer{border-top:1px solid var(--rule);padding-top:1.2rem;font-family:var(--san
     <li><span class="k">Email</span><a href="mailto:msanch74@jhu.edu">msanch74@jhu.edu</a></li>
     <li><span class="k">ORCID</span><a href="https://orcid.org/0000-0001-5541-8437" rel="me">0000-0001-5541-8437</a></li>
     <li id="scholar-li"><span class="k">Scholar</span><a href="https://scholar.google.com/citations?user=iDibQDsAAAAJ&hl=en" rel="me">Google Scholar</a></li>
-    <li><span class="k">Let's Connect</span><a href="https://www.linkedin.com/in/miguel-sanchez-gomez-01834a17b" target="_blank" rel="noopener">LinkedIn</a></li>
+    <!-- <li><span class="k">Let's Connect</span><a href="https://www.linkedin.com/in/miguel-sanchez-gomez-01834a17b" target="_blank" rel="noopener">LinkedIn</a></li> -->
     <li><span class="k">Location</span>Baltimore, Maryland</li>
+    <li>
+      <span class="k">Let's Connect</span>
+      <a href="https://www.linkedin.com/in/miguel-sanchez-gomez-01834a17b" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn profile">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.447 20.452H17.24V14.8c0-1.355-.026-3.099-1.89-3.099-1.891 0-2.18 1.477-2.18 3.0v5.751H9.018V9.545h3.054v1.495h.044c.426-.807 1.468-1.66 3.022-1.66 3.234 0 3.829 2.128 3.829 4.894v6.178zM5.337 8.07a1.77 1.77 0 1 1 .001-3.54 1.77 1.77 0 0 1-.001 3.54zM6.94 20.452H3.734V9.545H6.94v10.907z"/>
+        </svg>
+      </a>
+    </li>
   </ul>
   <button class="theme" id="theme" type="button" aria-label="Switch between light and dark theme">Switch theme</button>
 </aside>
